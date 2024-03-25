@@ -5,7 +5,7 @@
 }
 
 .container {
-  padding-top: 250px;
+  padding-top: calc(50vh - 150px);
 
   display: flex;
   justify-content: center;
@@ -28,17 +28,13 @@
 }
 
 @media (max-width: 1109px) {
-  circle {
-    display: flex;
-    flex-direction: column;
-  }
   .container {
-    padding-top: 185px;
+    padding-top: calc(50vh - 250px);
   }
 }
 
 @media (max-width: 550px) {
   .container {
-    padding: 30px 0;
+    padding-top: calc(50vh - 430px);
   }
 }
