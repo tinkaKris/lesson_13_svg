@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 250px;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.ellipse {
+  animation: ellipse 8s linear infinite;
+}
+
+@keyframes ellipse {
+  100% {
+    stroke: black;
+  }
+  80% {
+    fill: rgb(124, 75, 164);
+  }
+}
+
+@media (max-width: 1109px) {
+  circle {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    padding-top: 185px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 30px 0;
+  }
+}
